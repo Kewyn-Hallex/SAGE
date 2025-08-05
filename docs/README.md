@@ -19,6 +19,13 @@ SAGE/
 │ ├── app.js           # App principal do Express
 │ └── server.js           # Inicialização do servidor
 │
+├── database/
+│ ├── schema.sql           # Estrutura do banco de dados
+│ └── seed.js           # Inserção de dados iniciais
+│
+├── docs/
+│ └── roteiro.md           # Documentação e roteiro do sistema
+│
 ├── frontend/
 │ ├── assets/           # Imagens, ícones e fontes
 │ ├── css/           # Estilos personalizados
@@ -28,13 +35,6 @@ SAGE/
 │ └── index.html           # Página inicial ou tela de login
 │
 ├── public/           # Arquivos servidos pelo Node.js (HTML, CSS, JS)
-│
-├── database/
-│ ├── schema.sql           # Estrutura do banco de dados
-│ └── seed.js           # Inserção de dados iniciais
-│
-├── docs/
-│ └── roteiro.md           # Documentação e roteiro do sistema
 │
 ├── .env           # Variáveis de ambiente
 ├── .gitignore           # Arquivos/pastas ignoradas no Git
