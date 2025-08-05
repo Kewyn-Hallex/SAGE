@@ -1,87 +1,104 @@
-# 🌱 Vozes da Amazônia
+# 🎓 Plataforma Acadêmica
 
-Rede social colaborativa para dar visibilidade às comunidades ribeirinhas, indígenas e tradicionais da Amazônia sobre os impactos das mudanças climáticas.  
+Sistema web inspirado no SIGAA para facilitar a gestão acadêmica entre professores e alunos de forma moderna, prática e interativa.
+
 ---
 
 ## 📂 Estrutura do Projeto
 
 ```
 
-vozes-da-amazonia/
+SAGE/
 ├── frontend/
-│   ├── assets/           # Arquivos estáticos (css, js, imagens, fonts)
-│   ├── components/       # Componentes reutilizáveis (cards, navbar, footer)
-│   ├── pages/            # Telas completas (home, login, perfil, etc.)
-│   ├── map/              # Integrações e scripts do mapa
-│   ├── index.html        # Página inicial
-│   └── login.html        # Tela de login (exemplo)
+│ ├── assets/ # Imagens, ícones e fontes
+│ ├── css/ # Estilos personalizados
+│ ├── js/ # Scripts do frontend
+│ ├── components/ # Componentes HTML reutilizáveis (sidebar, header, etc.)
+│ ├── pages/ # Páginas HTML (login, dashboard, disciplinas, etc.)
+│ └── index.html # Página inicial ou tela de login
 │
 ├── backend/
-│   ├── controllers/      # Lógica do sistema (auth, relatos, etc.)
-│   ├── models/           # Regras de negócio e manipulação do banco
-│   ├── routes/           # Rotas da API (arquivos PHP)
-│   ├── config/           # Configuração, conexão com o banco, .env
-│   ├── middleware/       # Autenticação, validação, etc.
-│   ├── uploads/          # Mídias enviadas pelos usuários
-│   ├── api.php           # Arquivo principal das rotas da API
-│   └── .htaccess         # Regras de URL e segurança
+│ ├── controllers/ # Lógica das rotas (disciplinas, usuários, notas)
+│ ├── models/ # Modelos de dados
+│ ├── routes/ # Definição das rotas da API
+│ ├── middleware/ # Autenticação, validações, etc.
+│ ├── config/ # Conexão com banco e variáveis de ambiente
+│ ├── utils/ # Funções auxiliares
+│ ├── app.js # App principal do Express
+│ └── server.js # Inicialização do servidor
+│
+├── public/ # Arquivos servidos pelo Node.js (HTML, CSS, JS)
 │
 ├── database/
-│   ├── migrations/       # Scripts SQL para criar as tabelas
-│   └── vozes\_da\_amazonia.sql # Backup do banco principal
+│ ├── schema.sql # Estrutura do banco de dados
+│ └── seed.js # Inserção de dados iniciais
 │
 ├── docs/
-│   └── arquitetura-e-requisitos.pdf # Documentação oficial do projeto
+│ └── roteiro.md # Documentação e roteiro do sistema
 │
-│
-├── README.md             # Este arquivo
-└── .gitignore            # Itens ignorados no Git
-
+├── .env # Variáveis de ambiente
+├── .gitignore # Arquivos/pastas ignoradas no Git
+├── package.json # Dependências do projeto Node.js
+└── README.md # Este arquivo
 ````
 
----
-
-## 🚀 Visão Geral
-
-O **Vozes da Amazônia** é uma plataforma para que as comunidades amazônicas compartilhem relatos (texto, imagem, áudio ou vídeo) sobre os impactos das mudanças climáticas, levando essas histórias até a COP 30 e para o mundo.  
-Funcionalidades principais:
-- Cadastro e login de usuários
-- Postagens multimídia
-- Feed social (curtir, comentar, compartilhar)
-- Relatos geolocalizados no mapa da Amazônia
-- Filtros por categoria (desmatamento, rios, seca, queimadas, etc.)
 
 ---
 
-## 🛠️ Tecnologias
+## 🎯 Objetivo do Projeto
 
-- **Frontend:** HTML, Tailwind CSS, JavaScript
-- **Backend:** PHP
-- **Banco de Dados:** MySQL
+Desenvolver uma plataforma acadêmica web que centralize a gestão de disciplinas, notas, materiais, frequência e avisos, otimizando a comunicação entre professores e alunos.
 
 ---
 
-## 🏗️ Organização dos diretórios
+## 👤 Público-Alvo
 
-- **frontend/**: interface do usuário e scripts
-- **backend/**: lógica de negócio, rotas e regras de negócio
-- **database/**: scripts SQL e backups do banco
-- **docs/**: documentação oficial do projeto
+- **Professores:** gerenciamento de disciplinas, lançamento de notas, frequência e publicação de materiais.
+- **Alunos:** acompanhamento de desempenho, acesso a conteúdos e envio de atividades.
+
 ---
 
-## ⚙️ Como rodar (dev)
+## 📌 Funcionalidades
 
-Clone o projeto:
+### Para Professores:
+- Cadastro e edição de disciplinas
+- Lançamento de notas e frequência
+- Upload de materiais (PDF, slides, vídeos, etc.)
+- Criação de atividades com prazos
+- Publicação de avisos
+- Respostas a dúvidas dos alunos
+
+### Para Alunos:
+- Visualização de disciplinas
+- Acesso a materiais e avisos
+- Envio de trabalhos
+- Consulta de notas e frequência
+- Área de comentários/dúvidas
+- Notificações sobre prazos e novidades
+
+---
+
+## 💻 Tecnologias Utilizadas
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** Node.js, Express
+- **Banco de Dados:** (Você pode especificar MongoDB, MySQL, PostgreSQL, etc.)
+
+---
+
+## 🖥️ Design e Experiência
+
+- Layout responsivo (mobile e desktop)
+- Sidebar fixa para navegação
+- Tipografia moderna e limpa
+- Cards interativos com hover
+- Painel com métricas acadêmicas
+- Rodapé institucional simples
+
+---
+
+## ⚙️ Como rodar o projeto (dev)
+
+1. Clone o repositório:
    ```bash
-   git clone [URL do repo]
-````
-
----
-
-## 📢 Observações internas
-
-* Siga o padrão de organização dos diretórios!
-* Toda nova feature deve ser feita na branch `develop`.
-* Dúvidas? Puxe pelo grupo ou consulte o PDF de requisitos.
-
----
+   git clone [URL-do-repositório]
