@@ -10,36 +10,36 @@ Sistema web inspirado no SIGAA para facilitar a gestão acadêmica entre profess
 
 SAGE/
 ├── frontend/
-│ ├── assets/ # Imagens, ícones e fontes
-│ ├── css/ # Estilos personalizados
-│ ├── js/ # Scripts do frontend
-│ ├── components/ # Componentes HTML reutilizáveis (sidebar, header, etc.)
-│ ├── pages/ # Páginas HTML (login, dashboard, disciplinas, etc.)
-│ └── index.html # Página inicial ou tela de login
+│ ├── assets/           # Imagens, ícones e fontes
+│ ├── css/           # Estilos personalizados
+│ ├── js/           # Scripts do frontend
+│ ├── components/           # Componentes HTML reutilizáveis (sidebar, header, etc.)
+│ ├── pages/           # Páginas HTML (login, dashboard, disciplinas, etc.)
+│ └── index.html           # Página inicial ou tela de login
 │
 ├── backend/
-│ ├── controllers/ # Lógica das rotas (disciplinas, usuários, notas)
-│ ├── models/ # Modelos de dados
-│ ├── routes/ # Definição das rotas da API
-│ ├── middleware/ # Autenticação, validações, etc.
-│ ├── config/ # Conexão com banco e variáveis de ambiente
-│ ├── utils/ # Funções auxiliares
-│ ├── app.js # App principal do Express
-│ └── server.js # Inicialização do servidor
+│ ├── controllers/           # Lógica das rotas (disciplinas, usuários, notas)
+│ ├── models/           # Modelos de dados
+│ ├── routes/           # Definição das rotas da API
+│ ├── middleware/           # Autenticação, validações, etc.
+│ ├── config/           # Conexão com banco e variáveis de ambiente
+│ ├── utils/           # Funções auxiliares
+│ ├── app.js           # App principal do Express
+│ └── server.js           # Inicialização do servidor
 │
-├── public/ # Arquivos servidos pelo Node.js (HTML, CSS, JS)
+├── public/           # Arquivos servidos pelo Node.js (HTML, CSS, JS)
 │
 ├── database/
-│ ├── schema.sql # Estrutura do banco de dados
-│ └── seed.js # Inserção de dados iniciais
+│ ├── schema.sql           # Estrutura do banco de dados
+│ └── seed.js           # Inserção de dados iniciais
 │
 ├── docs/
-│ └── roteiro.md # Documentação e roteiro do sistema
+│ └── roteiro.md           # Documentação e roteiro do sistema
 │
-├── .env # Variáveis de ambiente
-├── .gitignore # Arquivos/pastas ignoradas no Git
-├── package.json # Dependências do projeto Node.js
-└── README.md # Este arquivo
+├── .env           # Variáveis de ambiente
+├── .gitignore           # Arquivos/pastas ignoradas no Git
+├── package.json           # Dependências do projeto Node.js
+└── README.md           # Este arquivo
 ````
 
 
