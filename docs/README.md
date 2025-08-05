@@ -9,14 +9,6 @@ Sistema web inspirado no SIGAA para facilitar a gestão acadêmica entre profess
 ```
 
 SAGE/
-├── frontend/
-│ ├── assets/           # Imagens, ícones e fontes
-│ ├── css/           # Estilos personalizados
-│ ├── js/           # Scripts do frontend
-│ ├── components/           # Componentes HTML reutilizáveis (sidebar, header, etc.)
-│ ├── pages/           # Páginas HTML (login, dashboard, disciplinas, etc.)
-│ └── index.html           # Página inicial ou tela de login
-│
 ├── backend/
 │ ├── controllers/           # Lógica das rotas (disciplinas, usuários, notas)
 │ ├── models/           # Modelos de dados
@@ -26,6 +18,14 @@ SAGE/
 │ ├── utils/           # Funções auxiliares
 │ ├── app.js           # App principal do Express
 │ └── server.js           # Inicialização do servidor
+│
+├── frontend/
+│ ├── assets/           # Imagens, ícones e fontes
+│ ├── css/           # Estilos personalizados
+│ ├── js/           # Scripts do frontend
+│ ├── components/           # Componentes HTML reutilizáveis (sidebar, header, etc.)
+│ ├── pages/           # Páginas HTML (login, dashboard, disciplinas, etc.)
+│ └── index.html           # Página inicial ou tela de login
 │
 ├── public/           # Arquivos servidos pelo Node.js (HTML, CSS, JS)
 │
@@ -41,7 +41,6 @@ SAGE/
 ├── package.json           # Dependências do projeto Node.js
 └── README.md           # Este arquivo
 ````
-
 
 ---
 
