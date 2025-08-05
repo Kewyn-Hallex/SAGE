@@ -1,4 +1,4 @@
-# 🎓 Plataforma Acadêmica
+# 🎓 SAGE - Plataforma Acadêmica
 
 Sistema web inspirado no SIGAA para facilitar a gestão acadêmica entre professores e alunos de forma moderna, prática e interativa.
 
