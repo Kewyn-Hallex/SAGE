@@ -34,8 +34,6 @@ SAGE/
 │ ├── pages/           # Páginas HTML (login, dashboard, disciplinas, etc.)
 │ └── index.html           # Página inicial ou tela de login
 │
-├── public/           # Arquivos servidos pelo Node.js (HTML, CSS, JS)
-│
 ├── .env           # Variáveis de ambiente
 ├── .gitignore           # Arquivos/pastas ignoradas no Git
 ├── package.json           # Dependências do projeto Node.js
