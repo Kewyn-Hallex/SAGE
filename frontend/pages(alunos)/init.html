@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Initial Page - SIEE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://unpkg.com/flowbite@2.3.0/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="transition-colors duration-300 bg-white dark:bg-gray-900">
+    <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar"
+        type="button"
+        class="inline-flex items-center p-2 mt-2 ms-3 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+        <span class="sr-only">Open sidebar</span>
+        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd" fill-rule="evenodd"
+                d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z">
+            </path>
+        </svg>
+    </button>
+
+    <aside id="logo-sidebar"
+        class="fixed top-0 left-0 z-40 w-80 h-screen transition-transform -translate-x-full sm:translate-x-0"
+        aria-label="Sidebar">
+        <div class="flex flex-col h-full px-12 py-4 overflow-y-auto bg-white shadow-lg dark:bg-gray-800">
+
+            <a href="#" class="flex items-center ps-2.5 mb-5">
+                <img src="../assets/img/logo.png" class="h-12 w-12 me-3" alt="Vozes da Amazônia Logo" />
+                <p class="text-gray-500 font-semibold dark:text-gray-300">SIEE</p>
+            </a>
+
+            <ul class="space-y-2 font-medium">
+                <li>
+                    <a href="index.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house-door w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z" />
+                        </svg>
+                        <span class="ms-3">Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="notas.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-book shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783" />
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Notas</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="calendario.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-calendar4-week shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+                            <path
+                                d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z" />
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Calendario</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="mensagens.html"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-envelope shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Mensagens</span>
+                        <span
+                            class="inline-flex items-center justify-center w-3 h-3 p-3 ms-3 text-sm font-medium text-blue-800 bg-blue-100 rounded-full dark:bg-blue-900 dark:text-blue-300">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-gear shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Configurações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-box-arrow-left shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
+                            <path fill-rule="evenodd"
+                                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
+                        </svg>
+                        <span class="flex-1 ms-3 whitespace-nowrap">Desconectar</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Perfil fixado embaixo -->
+            <div class="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700">
+                <div class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="shrink-0">
+                        <img src="https://placehold.co/144x144/E2E8F0/1E293B.png?text=U1"
+                            class="rounded-full w-10 h-10">
+                    </div>
+                    <div class="flex-1 min-w-0">
+                        <p class="text-sm font-semibold text-gray-900 truncate dark:text-white">
+                            USER
+                        </p>
+                        <p class="text-sm text-gray-500 truncate dark:text-gray-400">
+                            user@siee.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="sm:ml-80 h-screen grid grid-cols-1 md:grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)] gap-4 p-4">
+        <div class="p-6 rounded-lg overflow-y-auto">
+            <h1 class="text-2xl font-bold mb-6 dark:text-white">Seja bem-vindo, Kewyn!</h1>
+
+            <section class="mb-8">
+                <h2 class="text-lg font-semibold mb-4 dark:text-white">Avisos</h2>
+                <div class="bg-white rounded-lg shadow p-4 flex flex-col items-center dark:bg-gray-900 dark:shadow-2xl">
+                    <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-megafone-estilo-monocromatico-isolado-no-fundo-branco_1284-38767.jpg?semt=ais_hybrid&w=740&q=80"
+                        alt="Avisos" class="mb-4 rounded-lg w-24 h-24">
+                    <p class="text-gray-600 mb-4 text-center dark:text-gray-200">Não há notícias cadastradas</p>
+                    <p class="text-gray-400 text-sm mb-4 text-center dark:text-white">Confira novamente mais tarde para
+                        atualizações e
+                        avisos.</p>
+                    <button
+                        class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded dark:bg-gray-600 hover:bg-gray-700 dark:text-white">Atualizar</button>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-lg font-semibold mb-4 dark:text-white">Materias</h2>
+
+                <div
+                    class="bg-white rounded-lg shadow p-4 mb-4 flex items-center gap-4 dark:bg-gray-900 dark:shadow-2xl">
+                    <div class="flex-1">
+                        <h3 class="font-semibold dark:text-gray-300">Matemática</h3>
+                        <p class="text-gray-500 text-sm dark:text-gray-200">Professor: Daniel</p>
+                        <button
+                            class="mt-2 bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded text-sm dark:bg-gray-600 dark:hover:bg-gray-700 dark:text-white"
+                            onclick="selecionarMateria('Matemática')">
+                            Ver Detalhes
+                        </button>
+
+                    </div>
+                    <img src="https://via.placeholder.com/100x80?text=Imagem" alt="Matemática" class="rounded">
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow p-4 mb-4 flex items-center gap-4 dark:bg-gray-900 dark:shadow-2xl">
+                    <div class="flex-1">
+                        <h3 class="font-semibold dark:text-gray-300">Português</h3>
+                        <p class="text-gray-500 text-sm dark:text-gray-200">Professor: Adriano</p>
+                        <button
+                            class="mt-2 bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded text-sm dark:bg-gray-600 dark:hover:bg-gray-700 dark:text-white"
+                            onclick="selecionarMateria('Português')">
+                            Ver Detalhes
+                        </button>
+                    </div>
+                    <img src="https://via.placeholder.com/100x80?text=Imagem" alt="Português" class="rounded">
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow p-4 mb-4 flex items-center gap-4 dark:bg-gray-900 dark:shadow-2xl">
+                    <div class="flex-1">
+                        <h3 class="font-semibold dark:text-gray-300">Geografia</h3>
+                        <p class="text-gray-500 text-sm dark:text-gray-200">Professor: Vinicius</p>
+                        <button
+                            class="mt-2 bg-gray-200 hover:bg-gray-300 text-gray-800 px-3 py-1 rounded text-sm dark:bg-gray-600 dark:hover:bg-gray-700 dark:text-white"
+                            onclick="selecionarMateria('Geografia')">
+                            Ver Detalhes
+                        </button>
+                    </div>
+                    <img src="https://via.placeholder.com/100x80?text=Imagem" alt="Geografia" class="rounded">
+                </div>
+            </section>
+        </div>
+
+        <div
+            class="bg-white p-6 rounded-lg shadow-md w-full max-w-sm mx-auto dark:bg-gray-900 dark:shadow-2xl md:max-w-none">
+            <div class="flex justify-center mb-4">
+                <img src="https://placehold.co/144x144/E2E8F0/1E293B.png?text=U1" alt="Avatar"
+                    class="w-24 h-24 rounded-full border-2 border-gray-200">
+            </div>
+
+            <div class="text-center mb-6">
+                <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-200">Kewyn Almeida</h2>
+                <p class="text-gray-500 text-sm dark:text-gray-200">Matrícula: 123456789</p>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-300">Dados Institucionais</h3>
+                <div class="flex gap-4">
+                    <div class="bg-gray-100 p-4 rounded w-1/2 text-center dark:bg-gray-800 dark:text-gray-200">
+                        <p class="text-gray-500 text-sm dark:text-gray-200">Média Geral</p>
+                        <p class="font-semibold text-lg">7.8</p>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded w-1/2 text-center dark:bg-gray-800 dark:text-gray-200">
+                        <p class="text-gray-500 text-sm dark:text-gray-200">Frequência</p>
+                        <p class="font-semibold text-lg">95%</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-gray-700 font-medium mb-2 dark:text-gray-200">Informações</h3>
+                <p class="text-gray-500 text-sm mb-1 dark:text-gray-200">Série: <span
+                        class="font-semibold text-gray-800 dark:text-gray-200">3º ano</span></p>
+                <p class="text-gray-500 text-sm mb-1 dark:text-gray-200">Status: <span
+                        class="font-semibold text-gray-800 dark:text-gray-200">Ativo</span></p>
+                <p class="text-gray-500 text-sm dark:text-gray-200">E-mail: <span
+                        class="font-semibold text-gray-800 dark:text-gray-200">hallexkewyn@gmail.com</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function selecionarMateria(nome) {
+            localStorage.setItem("materiaSelecionada", nome);
+            window.location.href = "metarias.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+::-webkit-scrollbar {
+  width: 4px; /* Largura para a barra de rolagem vertical */
+}
+::-webkit-scrollbar-track {
+  background: transparent; /* Deixa o fundo transparente */
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6d6d6d9f; /* Cor cinza escuro */
+  border-radius: 4px; /* Cantos arredondados */
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor mais escura no hover */
+}
