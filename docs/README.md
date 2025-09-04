@@ -77,9 +77,9 @@ Desenvolver uma plataforma acadêmica web que centralize a gestão de disciplina
 
 ## 💻 Tecnologias Utilizadas
 
-- **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js, Express
-- **Banco de Dados:** (Você pode especificar MongoDB, MySQL, PostgreSQL, etc.)
+- **Frontend:** HTML, CSS, Tailwind, JavaScript
+- **Backend:** PHP
+- **Banco de Dados:** MySQL
 
 ---
 
